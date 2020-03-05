@@ -1,0 +1,543 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>User Landing Page</title>
+<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+<!-- Bootstrap v4 -->
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen">
+<!-- custom css -->
+<link href="css/UserLanding.css" rel="stylesheet" type="text/css" media="screen">
+<!-- If you use your own css link it last -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">  
+
+<link href="https://fonts.googleapis.com/css?family=Arvo|Merienda+One&display=swap" rel="stylesheet">
+<style>
+    body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+
+  background-color: #055384;
+  color: black;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  
+  padding: 14px 16px;
+  font-size: 22px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: white;
+
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Feed {background-color: white;}
+#Create {background-color: white;}
+#Location {background-color: white;}
+#About {background-color: white;}
+    #col1 {
+        
+        padding-bottom: 0px;
+        border-bottom: 5px solid #055384;
+    }
+    #col2 {
+        padding-bottom: 0px;
+        border-bottom: 5px solid #055384;  
+        padding-left: 50%;
+        padding-top: 55px;
+    }
+    #col3 {
+        border-bottom: 5px solid #f8eba2;
+    } 
+    
+    #nav {
+        background-color: white;
+       
+    }
+     #nav2 {
+        background-color: white;
+    }
+    
+    
+   
+    #logo {
+         padding-left: 45px;
+         margin-top: 0px;
+    }
+    
+    #boxes {
+        margin-left: 45px;
+    }
+    
+    #searchCombine {
+        margin-left: 20%;
+    }
+
+   input[type=text] {
+  width: 70%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url(images/search.png);
+  background-position: 98% 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+ 
+   @media (min-width: 500px) {
+        #Notify {
+        margin-left: 34%;
+        margin-top: 10px;
+        
+    }
+       
+       #signin {
+           margin-left:45px;
+       }
+     #CreateAccount {
+           margin-left:20px;
+       }
+      #logo {
+          margin-left: 25%;
+      }
+       
+       #nav {
+           padding-left: 0%;
+       }
+    .nav-pills {
+            margin-left: 1%; 
+        }
+       #Arrived {
+            margin-left:40px;
+        }
+        #Reviews {
+            margin-right:30px; padding-right:4px; margin-left:72px;
+       }
+        #Dropped {
+            margin-right:10px; margin-left:23px;
+        }
+       #More {
+            margin-right: 30px;
+            margin-left: 76px;
+        }
+    }
+    @media (min-width: 580px) {
+     #Notify {
+        margin-left: 35%;
+        margin-top: 10px;
+        
+    }
+      #logo {
+          margin-left: 29%;
+      }
+      
+    .nav-pills {
+            margin-left: 0%; 
+        }
+       #Arrived {
+            margin-right:0px;
+        }
+        #Reviews {
+            margin-right:30px; padding-right:4px; margin-left:0px;
+        }
+        #Dropped {
+            margin-right:10px;
+        }
+       #More {
+            margin-right: 30px;
+            margin-left: 9%;
+        }
+    }
+  @media (min-width: 630px) {
+     #Notify {
+        margin-left: 39%;
+        margin-top: 10px;
+        
+    }
+      #logo {
+          margin-left: 33%;
+      }
+    .nav-pills {
+            margin-left: 3%; 
+        }
+       #Arrived {
+            margin-right:0px;
+        }
+        #Reviews {
+            margin-right:30px; padding-right:4px; 
+        }
+        #Dropped {
+            margin-right:10px;
+        }
+       #More {
+            margin-right: 30px;
+            margin-left: px;
+        }
+    }  
+
+   @media (min-width: 750px) {
+      #Notify {
+        margin-left: 40%;
+        margin-top: 10px;
+        
+    }
+       #logo {
+          margin-left: 34%;
+      }
+    
+       .nav-pills {
+            margin-left: 7%; 
+        }
+        #Reviews {
+            margin-right:30px; padding-right:4px;
+        }
+        #Dropped {
+            margin-right:10px;
+        }
+         #More {
+            margin-left: 10px;
+            
+        }
+    }
+    @media (min-width: 760px) {
+      #Notify {
+        margin-left: 60%;
+        margin-top: 33px;
+        
+    }
+       #logo {
+          margin-left: 0%;
+      }
+     #signin {
+           margin-left:0px;
+       }
+     #CreateAccount {
+           margin-left:0px;
+       }   
+       .nav-pills {
+            margin-left: 7%; 
+        }
+        #Reviews {
+            margin-right:30px; padding-right:4px;
+        }
+        #Dropped {
+            margin-right:10px;
+        }
+         #More {
+            margin-left: 10px;
+            
+        }
+    }
+    @media (min-width: 820px) {
+   #Notify {
+        margin-left: 60%;
+        margin-top: 33px;
+        
+    }
+       #signin {
+           margin-left:0px;
+       }
+     #CreateAccount {
+           margin-left:0px;
+       }   
+    }
+    @media (min-width: 940px) {
+      #Notify {
+        margin-left: 65%;
+        margin-top: 33px;
+        
+    }
+        .nav-pills {
+            margin-left: 18%; 
+        }
+        #Reviews {
+            margin-right:40px; padding-right:4px;
+        }
+        #Dropped {
+            margin-right:10px;
+        }
+        #More {
+            margin-left: 0;
+        }
+    }
+    @media (min-width: 1000px) {
+        #Notify {
+        margin-left: 70%;
+        margin-top: 33px;
+        
+    }
+        .nav-pills {
+            margin-left: 17%; 
+        }
+        #Reviews {
+            margin-right:25px; padding-right:55px;
+        }
+        #Dropped {
+            margin-right:10px;
+        }
+    }
+     @media (min-width: 1200px) {
+        #Notify {
+        margin-left: 80%;
+        margin-top: 38px;
+        
+    }
+         .nav-pills {
+            margin-left: 15%; 
+        }
+        #Reviews {
+            margin-right:40px; padding-right:55px;
+        }
+         #Dropped {
+            margin-right:0px;
+        }
+    }
+    
+    @media (min-width: 1300px) {
+         .nav-pills {
+            margin-left: 15%; 
+        }
+        #Reviews {
+            margin-right:40px; padding-right:55px;
+        }
+    }
+    @media (min-width: 1400px) {
+     .nav-pills {
+            margin-left: 20%;
+            
+        }
+        #Arrived {
+            margin-right:20px;
+        }
+        #Dropped {
+            margin-right:40px;
+        }
+        #Reviews {
+            margin-right:40px; padding-right:55px;
+        }
+        #More {
+            margin-right: 20px;
+        }
+    }
+    @media (min-width: 1500px) {
+        #Shipment {
+            margin-left: 300px;
+            
+        }
+        #Shipment2 {
+            margin-right: 5px;
+        }
+        #Arrive {
+            margin-left: 0px;
+        }
+    
+        .nav-pills {
+            margin-left: 20%;
+            
+        }
+        
+        #star {
+            margin-top: 10px;
+            margin-left: 5px;
+        }
+        #MyReview {
+          
+            margin-top: 500px;
+        }
+        
+        #Arrived {
+            margin-right:30px;
+        }
+        #Dropped {
+            margin-right:40px;
+        }
+        #Reviews {
+            margin-right:40px; padding-right:55px;
+        }
+        #More {
+            margin-right: 20px;
+        }
+        #nav {
+          margin-left: 9%;
+          
+       }  
+    
+    }
+    @media (min-width: 1600px) {
+        
+     
+       
+    }
+     @media (min-width: 1700px) {
+        
+    }
+    @media (min-width: 1800px) {
+       
+     
+    }
+    @media (min-width: 1900px) {
+         
+    } 
+</style>
+    <link href="https://fonts.googleapis.com/css?family=Give+You+Glory" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+</head>
+
+<body>
+
+
+    
+
+<div class= "container-fluid">
+
+<div class="row">
+
+<div  id="col1" class="col-md-5">
+     <h2 id="logo"> <a href=""><img src="images/New-Logo.png" width="180" height="150"></a></h2>
+</div> 
+<div id="col2" class= "col-md-7">
+<h1 style="font-family:georgia,garamond,serif;">Beta</h1>
+</div>
+</div> <!-- end of first row -->
+<div class="row">
+<div id="nav" class="col-md-10">
+<button class="tablink" onclick="openPage('Feed', this, 'white')" style="font-family:georgia,garamond,serif;"id="defaultOpen">Feed</button>
+<button class="tablink" onclick="openPage('Create', this, 'white')" style="font-family:georgia,garamond,serif;">Write a Review</button>
+<button class="tablink" onclick="openPage('Location', this, 'white')" style="font-family:georgia,garamond,serif;">Search Locations</button>
+<button class="tablink" onclick="openPage('About', this, 'white')" style="font-family:georgia,garamond,serif;">Previous Locations</button>
+
+<div id="Feed" class="tabcontent">
+<h1 style="color: black; margin-left: 622px; font-family:georgia,garamond,serif;">Feed</h1>
+
+    <div class="card" style="width: 30rem; margin-left: 430px;margin-bottom: 10px;">
+  <div class="card-body">
+    <h5 class="card-title" style="color: black;"><img src="images/Person.png" width="30" height="30" style="padding-bottom: 5px;">FuzzyRabbit302 <img src="images/star-rating.png" width="100" height="30"  style="padding-bottom: 8px; margin-left: 2px;"></h5>
+    <p class="card-text" style="color: black;">This location was amazing and this site was easy to use!</p>
+    <p style="color:black; margin-top:3px;">  Overnight Parking  &nbsp;<img src="images/parking.png" height="30" width="30" style="padding-bottom:5px;"></p>
+  
+  </div>
+</div>
+    <div class="card" style="width: 30rem; margin-left: 430px; margin-bottom: 10px;">
+  <div class="card-body">
+    <h5 class="card-title" style="color: black;"><img src="images/Person.png" width="30" height="30" style="padding-bottom: 5px;">TruckerFav102<img src="images/star-rating.png" width="100" height="30"  style="padding-bottom: 8px; margin-left: 3px;"></h5>
+    <p class="card-text" style="color: black;">This site helped me quickly find a restroom when I was in need.</p>
+    <p style="color:black; margin-top:3px;"> Restrooms <img src="images/Restroom.png" height="30" width="30"></p>
+  </div>
+</div>
+    <div class="card" style="width: 30rem; margin-left: 430px; margin-bottom: 10px;">
+  <div class="card-body">
+    <h5 class="card-title" style="color: black;"><img src="images/Person.png" width="30" height="30" style="padding-bottom: 5px;">GrandpaLogan<img src="images/star-rating.png" width="100" height="30"  style="padding-bottom: 8px; margin-left: 3px;"></h5>
+    <p class="card-text" style="color: black;">Food is essential and this site made it easy for me to find the closest place possible.</p>
+   <p style="color:black; margin-top:3px;"> Food<img src="images/forkknife.png" height="30" width="30" style="margin-left: 4px;"></p>
+  </div>
+</div>
+    </div> 
+    
+   
+
+<div id="Create" class="tabcontent">
+  <h3 style="font-family:georgia,garamond,serif;">Write a Review</h3>
+  <div class="form-group" style="width: 60%">
+  <label for="exampleFormControlTextarea3">Rounded corners</label>
+  <textarea class="form-control" id="exampleFormControlTextarea3" rows="12"></textarea>
+  <button type="button"  style="margin-top: 5px; padding:15px 55px 15px 55px;" class="btn btn-primary">Post Review</button>
+</div>
+</div>
+
+<div id="Location" class="tabcontent">
+  <h1 style="color: black; margin-left: 539px; font-family:georgia,garamond,serif;">Locations</h1>
+  <h3></h3>
+<div id="searchCombine">
+<form action="/action_page.php">
+      <input type="text" placeholder="Search Locations" name="search">
+    
+    </form>
+<div id="boxes">
+<input type="checkbox" id="Overnight" name="vehicle1" value="Bike">
+<label for="vehicle1"  style="margin-left: 3px;color: black;">Overnight Parking  &nbsp;<img src="images/parking.png" height="30" width="30"></label>
+&nbsp; 
+<input type="checkbox" id="Food" name="vehicle2" value="Car">
+<label for="vehicle2" style="color: black;"> Food<img src="images/forkknife.png" height="30" width="30" style="margin-left: 4px;"></label>
+&nbsp;
+<input type="checkbox" id="Restrooms" name="vehicle3" value="Boat">
+<label for="vehicle3" style="color: black;"> Restrooms <img src="images/Restroom.png" height="30" width="30"></label>
+&nbsp;
+<input type="checkbox" id="Gas" name="vehicle1" value="Bike">
+<label for="vehicle1" style="color: black;"> Gas Station Nearby <img src="images/gas.png" height="30" width="30"></label>
+</div>
+
+</div>
+</div>
+
+<div id="About" class="tabcontent">
+  <h3>Previous Locations</h3>
+  <p>Who we are and what we do.</p>
+</div>
+
+    </div>
+<div id="nav2" class="col-md-2">
+
+    </div>
+    </div> <!-- end of second row -->
+    
+
+
+    </div>
+<script>
+//makers 
+//press release
+//home page trailer
+function openPage(pageName, elmnt, color) {
+  // Hide all elements with class="tabcontent" by default */
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Remove the background color of all tablinks/buttons
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+
+  // Show the specific tab content
+  document.getElementById(pageName).style.display = "block";
+
+  // Add the specific color to the button used to open the tab content
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+//if you redesign a website, make sure to take pictures with!
+    </script>
+<!-- jQuery and Bootstrap links - do not delete! -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<!-- end of do not delete -->
+</body>
+</html>
